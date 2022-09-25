@@ -1,0 +1,877 @@
+body {
+  width: 100%;
+  padding: 10px;
+  /*Valeur de marges intérieurs*/
+  font-family: 'Barlow', sans-serif;
+  background-image: url('../wsimg/concretebackground1.jpg');
+  box-sizing: border-box;
+}
+
+section {
+  padding: 30px;
+  padding-top:40px;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 900;
+  color: #A60D0D;
+  position: relative;
+  height: 100%;
+  width: auto;
+  font-size: 70px;
+}
+
+h3 {
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+audio {
+  position: relative;
+  width: 100%;
+}
+
+/*La barre de defilement*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-image: url('../wsimg/concretebackground1.jpg');
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E2CC02;
+}
+
+/*-------------------------PARTIE MENU -----------------------------------------*/
+nav{
+  width:100%;
+  position:fixed;
+  top:0;
+  font-weight:700;
+  justify-content:center;
+  text-align:center;
+  z-index: 2000;
+}
+nav div{
+  display:inline-flex;
+  padding-right:2%;
+  padding-left:2%;
+}
+nav a{
+  text-decoration:none;
+  color:#000000;
+  text-align:center;
+}
+#btnBranding a:hover{
+  color:#A60D0D;
+}
+#leMenuNav{
+  vertical-align:middle;
+}
+#listMenuNav{
+  list-style:none;
+  display:inline-flex;
+  vertical-align:middle;
+}
+.listMenuNavItem a{
+   text-align: center;
+}
+#listMenuNav li{ 
+  padding-top:10px;
+  width:150px;
+  position:relative;
+  display:inline-flex;
+}
+#listMenuNav li a{
+  color:#000000;
+ 
+}
+#listMenuNav li a:hover{
+  background-color:#A60D0D;
+  box-shadow:5px 5px #000000;
+}
+#leBouton{
+  display:none;
+}
+#showLeMenuLiLDevice{
+  background-color:#A60D0D;
+  font-weight:700;
+}
+ #hideLeMenuLiLDevice{
+   display:none;
+  }
+
+/*GENERALITE*/
+
+.bigtitlepage {
+  grid-column: 1 / 3;
+  /*col-3 en bootstrap*/
+}
+
+.titlepage {
+  writing-mode: vertical-rl;
+  /*text-orientation: upright;*/
+  display: inline;
+}
+.pbold{
+  font-weight: 700;
+}
+.psuperbold{
+  font-weight: 900;
+}
+.portraitAuteure img{
+  width: 80%;
+  vertical-align: middle;
+}
+.lecarre {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+}
+
+.lecarrePortfolio {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: -1;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.lecarre::after {
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+.cbleuinterieur {
+  color: #100DA6;
+}
+
+.cjauneinterieur {
+  color: #E2CC02;
+}
+
+.crougeinterieur {
+  color: #A60D0D;
+}
+
+.cbleu {
+  background-color: #100DA6;
+}
+
+.cjaune {
+  background-color: #E2CC02;
+}
+
+.crouge {
+  background-color: #A60D0D;
+}
+
+.cbleuborder {
+  border:  5px solid #100DA6;
+}
+
+.cjauneborder {
+  border:  5px solid #E2CC02;
+}
+
+.crougeborder {
+  border: 5px solid #A60D0D;
+}
+
+/*----------------------------PARTIE QUI SUIS JE -----------------------------------------*/
+.rowDeQuiSuisJe {
+  display: grid;
+  /*mise en place du tableau bootstrap (row) et (col)*/
+  grid-template-columns: 12;
+  grid-template-rows: auto;
+}
+.pageQuiSuisJe {
+  grid-column: 3 / 12;
+  /*col-9 en bootstrap*/
+  grid-row: auto;
+}
+.quisuisjeresumeprogression{
+  display: inline-grid;
+  vertical-align: middle;
+}
+.lesTroisPoints{
+  font-size: 30px;
+  font-weight: 700;
+}
+.pageQuiSuisJe .colonneQuiSuisJe {
+  display: inline;
+}
+.quisuisjeprogression{
+  width: 400px;
+  grid-column: 10 / 12;
+}
+.quisuisjeprogression ul {
+  list-style: none;
+}
+
+.quisuisjeprogression ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quisuisjeprogression ul li div.lescaseProgression {
+  display: inline;
+  max-width: 400px;
+  position: relative;
+}
+
+.logoprogression {
+  width: 100%;
+  max-width: 35px;
+  max-height: 35px;
+  display: inline-flex;
+}
+
+/*div.logoprogression img:hover{
+  display: inline-flex;
+}*/
+.quisuisjeresume p{
+  display: inline;
+}
+.quisuisjeresume{
+  width: 400px;
+  max-width: 500px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x:auto;
+}
+.contenuProgression{
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.tailleProgression{
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  height: 15px;
+  opacity: 1;
+
+}
+.HTMLprog{
+  width: 70%;
+
+}
+.CSSprog{
+  width: 70%;
+}
+.BOOTSTRAPprog{
+  width: 60%;
+}
+.PHPprog{
+  width: 40%;
+}
+.JSprog{
+  width: 30%;
+}
+
+/*----------------------------PARTIE PARCOURS -----------------------------------------*/
+.rowDePageParcours {
+  display: grid;
+  /*mise en place du tableau bootstrap (row) et (col)*/
+  grid-template-columns: 12;
+  grid-template-rows: auto;
+}
+
+.pageParcours {
+  grid-column: 3 / 12;
+  /*col-9 en bootstrap*/
+  grid-row: auto;
+}
+
+.pageParcours .colonneParcours {
+  display: inline;
+}
+
+.cparcours {
+  padding: 30px;
+  margin: 30px;
+  width: 100%;
+  max-width: 200px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.audioContenu {
+display: none;
+position: relative;
+}
+.audioContenu section{
+  grid-column: 6 / 10;
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+  
+}
+.cparcoursun {
+  box-shadow: 5px 5px #100DA6;
+}
+
+.cparcoursdeux {
+  box-shadow: 5px 5px #E2CC02;
+}
+
+.cparcourstrois {
+  box-shadow: 5px 5px #A60D0D;
+}
+
+.cparcoursquatre {
+  box-shadow: 5px 5px #100DA6;
+}
+
+.cparcourscinq {
+  box-shadow: 5px 5px #A60D0D;
+}
+
+.btnSummary {
+  align-items: center;
+  margin-top: 10px;
+  border: none;
+  background-color: none;
+  font-weight: 900;
+}
+
+.closeTextParcours{
+border: none;
+color: #A60D0D;
+background: none;
+}
+div.audioContenu section{
+  padding-top: 10px;
+}
+
+/*----------------------------PARTIE PORTFOLIO -----------------------------------------*/
+.rowDePagePortfolio {
+  display: grid;
+  /*mise en place du tableau bootstrap (row) et (col)*/
+  grid-template-columns: 12;
+  grid-template-rows: auto;
+}
+
+.pagePortfolio {
+  grid-column: 3 / 12;
+  /*col-9 en bootstrap*/
+  grid-row: auto;
+  /*display: inline-flex;
+  column-gap: 20px;*/
+}
+.portfolioParagraphe p {
+  font-weight: 300;
+}
+.portfolioleparagraphe {
+  color: #000000;
+  display: flex;
+  position: relative;
+}
+.pagePortfolio .colonnePortfolio{
+  display: inline;
+}
+.colonnePortfolio button {
+  border: none;
+  background: none;
+}
+
+.colonnePortfolio button:hover {
+  background-color: #000000;
+}
+
+button .enSavoirPlusPortfolio, .closeTextParcours{
+  font-weight: 700;
+  font-size: 40px;
+  max-width: 50px;
+  max-height: 50px;
+  width: 100%;
+}
+
+.portfolioParagraphe {
+  padding-top: 30px;
+  width: auto;
+  height: 300px;
+  max-width: 200px;
+  overflow: auto;
+}
+.cportfolio{
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  flex-grow: 1;
+  padding: 30px;
+  margin: 40px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.ifrascroll {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  display: none;
+  /* Caché par défaut */
+  position: fixed;
+  /* Reste en place même si la page scroll*/
+  z-index: 1;
+  /* Est au dessus de tout élément */
+  padding-top: 100px;
+  /* Tiens dans une boite */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Largeur maximale */
+  height: 100%;
+  /* Hauteur maximale */
+  overflow: auto;
+  /* Autorise le scroll si besoin */
+  background-color: #000000e0;
+  /* Couleur d'arriere plan */
+}
+
+/* Contenu du Modal (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+/* Ajout d'animation - Ici zoom sur le modal quand le bouton est appuyé */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Le bouton de suppression */
+.close {
+  position: absolute;
+  z-index: 10000;
+  margin-top: 15px;
+  margin-right: 35px;
+  color: #100DA6;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/*----------------------------PARTIE ME CONTACTER ---------------------------------*/
+
+.mecontactermessage {
+  width: 550px;
+  height: 350px;
+}
+.lecontourBleuContact{
+  border: solid #A60D0D;
+}
+.meContacterFormulaire input:value{
+    opacity: 0.5;
+    font-weight: 300;
+  }
+.photoContact {
+  max-width: 400px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  display: inline;
+}
+.labelInputContact{
+  width: 130px;
+  color: #A60D0D;
+  font-weight: 700;
+}
+.contactButton{
+  border: solid #A60D0D;
+  color: #A60D0D;
+  font-weight: 700;
+}
+
+/*----------------------------PARTIE FOOTER --------------------------------------*/
+.footerlogo ul {
+  list-style: none;
+}
+
+.footerlogo ul li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footerlogo ul li img {
+  width: 100%;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.summaryParcours {
+  display: none;
+}
+
+/*  Lien pour les carrés de couleur https://www.benjaminsimier.com/css-obtenir-un-carre-responsive/ */
+/* Lien pour les fonts https://fonts.google.com/specimen/Barlow#standard-styles */
+
+/*------------------------------------ RESPONSIVE CODE----------------------------------------------------*/
+@media screen and (max-width : 600px) {
+  body {
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+    /*Valeur de marges intérieurs
+    font-family: 'Barlow', sans-serif;
+    background-image: url('../wsimg/concretebackground1.jpg');
+    box-sizing:border-box;*/
+  }
+
+  section {
+    padding-top: 50px;
+  }
+
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-weight: 900;
+    color: #A60D0D;
+    position: relative;
+    height: 100%;
+    width: auto;
+    font-size: 17pt;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    height: 100%;
+    width: auto;
+    font-size: 14pt;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  audio {
+    position: relative;
+    width: 100%;
+  }
+
+  .titlepage {
+    writing-mode: horizontal-tb;
+    /*text-orientation: upright;*/
+    display: inline;
+  }
+  .accueilTitle{
+    display: none;
+  }
+  div.nomAuteure{
+    text-align: center;
+  }
+  .nomAuteure h1{
+    font-size: 20pt;
+  }
+  .portraitAuteure{
+    display: none;
+  }
+  .lilIntro{
+    display: none;
+  }
+
+  .lecarre {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .cparcours {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 100px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+
+  audio {
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+/*PARTIE NAV*/
+nav{
+  width:auto;
+  position:fixed;
+  top:0;
+  font-weight:700; 
+  font-size:60%;
+  display: flex;
+}
+nav div{
+  display:inline-flex;
+  padding-right:1%;
+  padding-left:1%;
+}
+nav a{
+  text-decoration:none;
+  color:#000000;
+}
+#btnBranding{
+    display:block;
+  } 
+#leMenuNav{
+  vertical-align:middle;
+}
+#listMenuNav{
+  list-style:none;
+  vertical-align:middle;
+}
+#listMenuNav li{ 
+  padding-top:10px;
+  width:auto;
+  position:relative;
+  display:inline;
+}
+#listMenuNav li a{
+  display: block;
+  overflow: inherit;
+}
+
+/* PARTIE QUI SUIS JE */
+    
+
+
+  .rowDeQuiSuisJe {
+    display: grid;
+    /*mise en place du tableau bootstrap (row) et (col)*/
+    grid-template-rows: auto;
+  }
+  .pageQuiSuisJe {
+    grid-column: 1 / 12;
+    /*col-9 en bootstrap*/
+    grid-row: auto;
+  }
+  div .quisuisjeresume p{ 
+  max-width: 250px;
+  overflow-y: scroll;
+}
+.quisuisjeresume{
+    grid-column: 1 / 6;
+    display: inline;
+    width: 200px;
+    max-width: 250px;
+    overflow-y: scroll;
+  }
+  .quisuisjeresumeprogression{
+    grid-template-columns: 4;
+    grid-template-rows: auto;
+    display: inline-grid;
+  }
+  .pageQuiSuisJe .colonneQuiSuisJe {
+    display: inline;
+  }
+  .quisuisjeprogression{
+    width: 100px;
+    grid-column: 6 / 12;
+  }
+  .quisuisjeprogression ul{
+    display: inline;
+  }
+  .quisuisjeresume p{
+    display: inline;
+  }
+  .lesTroisPoints{
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+    .logoprogression {
+      width: 100%;
+      max-width: 15px;
+      max-height: 15px;
+    }
+    .contenuProgression{
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 100px;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 5px;
+    }
+    .tailleProgression{
+      text-align: right;
+      font-size: 12px;
+      font-weight: 700;
+      height: 7px;
+      opacity: 1;
+    
+    }
+    .HTMLprog{
+      width: 70%;
+    
+    }
+    .CSSprog{
+      width: 70%;
+    }
+    .BOOTSTRAPprog{
+      width: 60%;
+    }
+    .PHPprog{
+      width: 40%;
+    }
+    .JSprog{
+      width: 30%;
+    }
+  /*PAGE PARCOURS*/
+  .bigtitlepage {
+    grid-column: 1 / 12;
+    display: inline;
+  }
+  div.pageParcours{
+    text-align: center;
+  }
+  .cparcours {
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    max-width: 125px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+   div.audioContenu section{
+    margin: 1px;
+    padding: 5px;
+    grid-column: 6 / 10;
+    display: inline-block;
+    max-width: 150px;
+    width: 100%;
+  }
+  .closeTextParcours{
+    border: none;
+    color: #A60D0D;
+    background: none;
+    }
+  /*PAGE PORTFOLIO*/
+  .portfolioParagraphe {
+    padding-top: 30px;
+    width: auto;
+    height: 200px;
+    overflow: auto;
+  }
+  .cportfolio{
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 100px;
+  }
+  .lecarrePortfolio {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .modal-content {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+  .modal {
+    display: none;
+    /* Caché par défaut */
+    position: fixed;
+    /* Reste en place même si la page scroll*/
+    z-index: 1;
+    /* Est au dessus de tout élément */
+    padding-top: 100px;
+    /* Tiens dans une boite */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Largeur maximale */
+    height: 100%;
+    /* Hauteur maximale */
+    overflow: auto;
+    /* Autorise le scroll si besoin */
+    background-color: #000000e0;
+    /* Couleur d'arriere plan */
+  }
+iframe.ifrascroll {
+    zoom: 0.41;
+  }
+
+  /*PAGE CONTACT*/
+  .photoContact {
+    display: none;
+  }
+  .mecontactermessage {
+    max-width: 350px;
+    max-height: 350px;
+    width: 80%;
+  }
+  .lecontourBleuContact{
+    border: solid #A60D0D;
+  }
+  .meContacterFormulaire input:value{
+      opacity: 0.5;
+      font-weight: 300;
+    }
+  .labelInputContact{
+    width: 95px;
+    color: #A60D0D;
+    font-weight: 700;
+  }
+  .contactButton{
+    border: solid #A60D0D;
+    color: #A60D0D;
+    font-weight: 700;
+  }
+}

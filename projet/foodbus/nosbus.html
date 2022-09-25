@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>FOOD BUS: le food truck 2.0| Mais où sont les bus?</title>
+	<link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="description" content="Bienvenus chez Foodbus. Un bus qui vous propose une restauration 2.0. Voici nos bus et nos localités. Trouvez le plus proche de vous."/>
+</head>
+<!--DEBUT DE PAGE-->
+<body>
+	
+	<!--NAV-------------------------------------------------------------------------------------------------------  -->
+	<!--régler la couleur des textes et ajouter la barre de recherche et menu hamburger -->
+	<nav class="navbar navbar-expand-md  justify-content-center fixed-top" role="navigation">
+		<div class="navbar-header col-md-2">
+			<a class="navbar-brand" href="index.html "><img class="img-responsive" src="img/logo.png" alt="brand logo"></a>
+		</div>
+		
+
+
+		<!--HAMBURGER------------------------------------------------------------------------------------------------------------ -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lacollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+		<div class="collapse navbar-collapse" id="lacollapse">
+			<ul class="nav navbar-nav" >
+
+				<li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
+
+				<li class="nav-item"><a class="nav-link activeted" href="nosbus.html">Nos Bus</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="menus.html">Menus</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Formules</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+			</ul>
+
+			
+			<!-- BARRE DE RECHERCHE-->
+			<form class="form-inline offset-md-2" action="#">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search">
+				<button class="btn btn-secondary" type="submit">
+					<i><svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+ 				 	<path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+  					<path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+					</svg></i>	
+				</button>
+			</form>
+		</div>
+
+	</nav>
+
+
+	<!--IMG D'ACCUEIL---------------------------------------------------------------------------------------------------  -->
+	<section class="row">
+
+		<div class="img-fluid imgacc">
+			<img src="img/bus1.jpg" class="imgintro" alt="Bus rouge à double étages">
+			<div class="imgintroresum col-sm-8 offset-2 embed-responsive-item">
+				<h1>Nos bus, actuellement dans le Val d'Oise et les Hauts-de-Seine.</h1>
+			</div>
+		</div>
+	</section>
+
+	<!--LA CARTE-->
+	<div class="embed-responsive col-md-6 offset-md-3 sectionindex">
+		<img src="img/carte.png" alt="carte d'Île de france" class="img-fluid">
+	</div>
+
+	<h2 class="offset-md-3">3 bus et demi pour vous servir!</h2>
+
+
+	<!--LES BUS-->
+	<section class="row offset-md-1 sectionindex">
+		<div class="col-md-2">
+			<img src="img/mary.jpg" alt="Bus rouge à double étages" class="img-fluid">
+		</div>
+		<div class="col-md-3">
+			<h4>Mary: la pionnière</h4>
+			<p>Notre premier bus fraîchement débarqué de Londres.
+				Localisation:IUT de Sarcelles.
+			Spécialité: Fish&Chips</p>
+		</div>
+		<div class="col-md-2 offset-md-2">
+			<img src="img/penelope.jpg" alt="Bus jaune à double étages" class="img-fluid">
+		</div>
+		<div class="col-md-3">
+			<h4> Pénélope: l'ensoleillé</h4>
+			<p>Avec son toit ouvrant, c'est le must de l'été.
+				Localisation: Nanterre Université
+			Spécialité: Paëlla</p>
+		</div>
+	</section>
+	<br>
+	<section class="row offset-md-1" >
+		<div class="col-md-2">
+			<img src="img/kelly.jpg" alt="Bus d'école à une étage" class="img-fluid">
+		</div>
+		<div class="col-md-3">
+			<h4>Kelly: la scolaire</h4>
+			<p>Ambiance Diner et Fast-Food, bon dans notre classique américain.
+				Localisation: U-Cergy-3 Chênes
+			Spécialité: Burger aux 3 fromages</p>
+		</div>
+		<div class="col-md-2 offset-md-2">
+			<img src="img/gisele.jpg" alt="Bus multicolore à une étage" class="img-fluid">
+		</div>
+		<div class="col-md-3">
+			<h4>Gisèle: la nouvelle</h4>
+			<p> Notre équpe est en train de renover ce bus originaire du Mexique.
+			Suivez son avancement sur Instagram!</p>
+		</div>
+	</section>
+
+	<br>
+	<h3 class="offset-md-4 motnosbus">Et la famille va continuer à s'agrandir...</h3>
+	<br>
+	<br>
+	<br>
+
+
+<!--FOOTER--------------------------------------------------------------------------------------------------------  -->
+<footer>
+	<section class="row">
+		<div class="footermention col-md-2">
+			<p>2020 - Equipe Foodbus - Cergy Université (CUY)</p>
+		</div>
+
+		<!-- LOGO-------------------------------------------------------------------------------------- -->
+		<div class="footerlogo">
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item col-sm-2"><a href="https://fr-fr.facebook.com/"><img src="img/facebook.png" alt="logo facebook" class="img-fluid"></a></li>
+
+				<li class="list-inline-item col-sm-2"><a href=""><img src="img/twitter.png" alt="logo twitter" class="img-fluid"></a></li>
+
+				<li class="list-inline-item col-sm-2"><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="logo instagram" class="img-fluid"></a></li>
+
+				<li class="list-inline-item col-sm-2"><a href="https://www.snapchat.com/l/fr-fr/"><img src="img/snapchat.png" alt="logo snapchat" class="img-fluid"></a></li>
+			</ul>
+		</div> 
+
+		<!-- MENUS-------------------------------------------------------------------------------------- -->
+		<div class="footermenu col-md-6">
+			<ul class="list-unstyled list-inline text-reset">
+				<li class="list-inline-item"><a href="presentation.html" class="text-white">Présentation</a></li>
+				<li class="list-inline-item"><a href="nosbus.html" class="text-white">Nos Bus</a></li>
+				<li class="list-inline-item"><a href="menus.html" class="text-white">Menus</a></li>
+				<li class="list-inline-item"><a href="formules.html" class="text-white">Formules</a></li>
+				<li class="list-inline-item"><a href="contact.html" class="text-white">Contact</a></li>
+				<li class="list-inline-item"><a href="faq.html" class="text-white">Foire aux Question</a></li>
+			</ul>
+			<p> Condition Générales de ventes - Mention légales
+			</p>
+		</div>
+	</section>
+</footer>
+</body>
+</html>

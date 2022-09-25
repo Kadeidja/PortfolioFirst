@@ -1,0 +1,42 @@
+body{
+  background:black;
+  /*display:flex;
+  justify-content:center;
+  align-items:center;*/
+}
+.boite{
+  position:absolute;
+  text-align:center;
+}
+.box{
+  background-color:white;
+  display:inline-block;
+  width:200px;
+  height:205px;
+  border:solid white;
+  border-radius:50% 50% 10% 10%;
+  position:relative;
+  box-shadow:2px 0px 40px black;
+  overflow:hidden;/*tout ce qui dépasse est caché*/
+}
+.wave{
+  width: 80px;
+  height: 80px;
+  position:absolute;
+/*background-color:violet;*/
+  border-radius:50%;
+  /*transition:all 10.4s linear;*/
+  animation:waves 2.4s linear infinite;/*l'animation qui permet de faire tourner */
+  background: linear-gradient(
+  to right, black,red );
+}
+
+
+@keyframes waves{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

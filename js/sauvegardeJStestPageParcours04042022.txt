@@ -1,0 +1,299 @@
+
+//LES PARCOURS
+// -----------------------------PARTIE PARCOURS -----------------------------------------
+/*
+//CECI FONCTIONNE SAUF QUE LA CASE AUDIO CONCERNE DISPARAIT
+var sectionHidden = document.getElementsByClassName('colonneParcours'); //selectionner les elements à cacher
+var audioALire = document.getElementsByClassName("audioEcouter"); //l'audio cible
+var sectionToDisplay = document.getElementsByClassName("audioContenu");//Le modal à faire apparaitre
+var i = 0;
+
+audioALire[i].onplay = function showAudioWindow() {
+  console.log(sectionHidden);
+  sectionHidden[i].style.display = "none";
+  console.log(sectionToDisplay);
+  sectionToDisplay[i].style.display = "block";
+    
+}
+audioALire.onpause = function unshowedAudioWindow() {
+  sectionHidden.style.display = "initial";
+}
+*/
+
+/*CELA NE FONCTIONNE PAS
+var sectionHidden = document.getElementsByClassName('colonneParcours'); //selectionner les elements à cacher
+var audioALire = document.getElementsByClassName("audioEcouter"); //l'audio cible
+var sectionToDisplay = document.getElementsByClassName("audioContenu");//Le modal à faire apparaitre
+var i = 0;
+  if(audioALire[i].onplay){
+    console.log(sectionToDisplay);
+    sectionToDisplay[i].style.display = "block";
+  }
+    else{
+      sectionToDisplay[i].style.display = "none"
+    };*/
+
+
+// C'est presque OK
+var sectionHidden = document.getElementsByClassName('colonneParcours'); //selectionner les elements à cacher
+var audioALire = document.getElementsByClassName("audioEcouter"); //l'audio cible
+var sectionToDisplay = document.getElementsByClassName("audioContenu");//Le modal à faire apparaitre
+var i = 0;
+var fermerTexte = document.getElementsByClassName("closeTextParcours");
+/*for (i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';
+}*/
+//i ne doit pas etre egale à l'index de audioEcouter pour que colonneParcours disparaisse
+/**
+audioALire[i].onplay = function() {
+  console.log(sectionToDisplay);
+  sectionToDisplay[i].style.display = "block";
+};
+
+fermerTexte.onclick = function() {
+  console.log(sectionToDisplay.item);
+  sectionToDisplay[i].style.display = "none";
+}**/
+/*
+if(i !== audioALire.index){
+  sectionHidden[i].style.display="none";
+}else{
+  sectionHidden[i].style.display="initial";
+}*/
+
+
+audioALire[i].onplay = function() {
+  console.log(sectionToDisplay[i]);
+  sectionToDisplay[i].style.display = "block";
+};
+fermerTexte.onclick = function() {
+  console.log(sectionToDisplay.index);
+  sectionToDisplay[i].style.display = "none";
+};
+
+
+
+
+
+
+LE HTML
+ <!--              MON PARCOURS                  -->
+    <section id="monparcours">
+      <div class="row">
+        <div class="col-3 bigtitlepage">
+          <h1 class="titlepage">MON PARCOURS</h1>
+        </div>
+        <div class="col-9 row">
+          
+          <div class="col colonneParcours">
+          <div class="align-self-start cparcours cparcourscinq cbleu">
+            <img
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/ordinare.png?v=1643158971751"
+            />
+            <h3 class="datetitle">2012-2015</h3>
+            <audio
+              controls
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/kadeidja%20-%20portfoliop2012%202015.m4a?v=1644200321121"
+            class="audioEcouter"></audio>
+          </div>
+        </div>
+          <div>
+             <section class="audioContenu">
+             <span class="closeTextParcours">&times;</span>
+            <div>
+              <h3>
+                DE 2012 à 2015
+              </h3>
+             </div>
+             <div>
+               <div>
+                 <p>
+                 Mettre Image
+               </p>
+               </div>
+               <div>
+                 <p>
+                 Mettre l'audio
+               </p>
+               </div>
+               <div>
+                 <p>
+                   Lorem ipsum la suite....
+                 </p>
+               </div>
+             </div>
+             
+           </section>
+          </div>
+          
+          <div class="col colonneParcours">
+          <div class="align-self-start cparcours cparcourscinq cbleu">
+            <img
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/ordinare.png?v=1643158971751"
+            />
+            <h3 class="datetitle">2012-2015</h3>
+            <audio
+              controls
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/kadeidja%20-%20portfoliop2012%202015.m4a?v=1644200321121"
+            class="audioEcouter"></audio>
+          </div>
+        </div>
+           <div>
+             <section class="audioContenu">
+             <span class="closeTextParcours">&times;</span>
+            <div>
+              <h3>
+                DE 2012 à 2015
+              </h3>
+             </div>
+             <div>
+               <div>
+                 <p>
+                 Mettre Image
+               </p>
+               </div>
+               <div>
+                 <p>
+                 Mettre l'audio
+               </p>
+               </div>
+               <div>
+                 <p>
+                   Lorem ipsum la suite....
+                 </p>
+               </div>
+             </div>
+             
+           </section>
+          </div>
+          
+          <div class="col colonneParcours">
+          <div class="align-self-start cparcours cparcourscinq cbleu">
+            <img
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/ordinare.png?v=1643158971751"
+            />
+            <h3 class="datetitle">2012-2015</h3>
+            <audio
+              controls
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/kadeidja%20-%20portfoliop2012%202015.m4a?v=1644200321121"
+            class="audioEcouter"></audio>
+          </div>
+        </div>
+           <div>
+             <section class="audioContenu">
+             <span class="closeTextParcours">&times;</span>
+            <div>
+              <h3>
+                DE 2012 à 2015
+              </h3>
+             </div>
+             <div>
+               <div>
+                 <p>
+                 Mettre Image
+               </p>
+               </div>
+               <div>
+                 <p>
+                 Mettre l'audio
+               </p>
+               </div>
+               <div>
+                 <p>
+                   Lorem ipsum la suite....
+                 </p>
+               </div>
+             </div>
+             
+           </section>
+          </div>
+          
+          <div class="col colonneParcours">
+          <div class="align-self-start cparcours cparcourscinq cbleu">
+            <img
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/ordinare.png?v=1643158971751"
+            />
+            <h3 class="datetitle">2012-2015</h3>
+            <audio
+              controls
+              src="https://cdn.glitch.global/d69fb3e0-5705-492e-aa2d-b9476efa6a28/kadeidja%20-%20portfoliop2012%202015.m4a?v=1644200321121"
+            class="audioEcouter"></audio>
+          </div>
+        </div>
+           <div>
+             <section class="audioContenu">
+             <span class="closeTextParcours">&times;</span>
+            <div>
+              <h3>
+                DE 2012 à 2015
+              </h3>
+             </div>
+             <div>
+               <div>
+                 <p>
+                 Mettre Image
+               </p>
+               </div>
+               <div>
+                 <p>
+                 Mettre l'audio
+               </p>
+               </div>
+               <div>
+                 <p>
+                   Lorem ipsum la suite....
+                 </p>
+               </div>
+             </div>
+             
+           </section>
+          </div>
+          
+        </div> 
+      </div>
+    </section>
+   
+
+
+
+
+
+LE CSS
+
+.cparcours{
+  padding: 30px;
+  margin: 30px;
+  width:100%;
+  max-width:200px;
+  display: flex;
+  flex-flow:row wrap;
+  flex-basis:auto;
+  flex-grow:1;
+}
+.cparcoursun{
+  box-shadow:5px 5px #E2CC02;
+}
+.cparcoursdeux{
+  box-shadow:5px 5px #100DA6;
+}
+.cparcourstrois{
+  box-shadow:5px 5px #E2CC02;
+}
+.cparcoursquatre{
+  box-shadow:5px 5px #100DA6;
+}
+.cparcourscinq{
+  box-shadow:5px 5px #A60D0D;
+}
+.mecontactermessage{
+  width: 450px;
+  height:350px;
+  border:solid #A60D0D;
+}
+.audioContenu{
+  display:none;
+}
+.closeTextParcours{
+  width:70px;
+  color:#A60D0D;
+}

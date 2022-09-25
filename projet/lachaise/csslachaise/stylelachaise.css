@@ -1,0 +1,474 @@
+@font-face {
+	font-family: 'Abril_Fatface';
+	src: url('../fontslachaise/Abril_Fatface/AbrilFatface-Regular.ttf'),
+	url('AbrilFatface.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost';
+	src: url('../fontslachaise/Jost/static/Jost-Medium.ttf'),
+	url('Jost-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'minimal';
+	src: url('../fontslachaise/minimal/minimal.otf'),
+	url('minimal.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	color: black;
+	/*font-family: "Abril_Fatface","Jost", "minimal", Arial, sans-serif;*/
+}
+/*NAV*/
+		.navbar{
+			background-color: rgba(0, 0, 0, 0.2);	
+			height: 20%;
+			width: auto;
+		}
+		.navbar li {
+			display: inline;
+		}
+		.img-responsive{
+			width:100%;
+			max-width: 90px;
+		}
+		.nav-link{
+			color: white;
+		}
+		.nav-link:hover{
+			background-color: #e2ba83;
+			color: black;
+		}
+		.activeted{
+			color: #e2ba83;
+		}
+	.navbar-header{
+			display: inline-flex;
+		}
+		.lesimputs{
+			color: black; 
+			border-color: black;
+			margin-bottom: 10px;
+		}
+
+		.imgacc{
+			position: relative;
+		}
+		.imgsummary{
+			color: white;
+			z-index: 1000;
+		    bottom:0; 
+			left:0; 
+			position: absolute;
+		}
+		h1,h2,h3{
+			font-family:"Abril_Fatface", sans-serif;
+		}
+/*BOUTON DE RECHERCHE*/
+.buttonsearch{
+	background-color: #e2ba83;
+	border-color: #e2ba83;
+}
+/*IMAGE DE SECTION PAGE D'ACCUEIL*/
+		div.img-fluid{
+			position: relative;
+  			display: block;
+  			width: 100%;
+  			padding: 0;
+  			overflow: hidden;
+		}
+		img.imgintro{
+			width: 100%;
+		}
+		.imgmode1{
+			width: 100%;
+		}
+		.imgobjet1{
+			width: 100%;
+		}
+		.accueilrow{
+			padding-top: 20px;
+		}
+		div.imgaccsum{
+			color: black;
+			z-index: 1000;
+		    bottom: 50%; 
+			left: 40%; 
+			position: absolute;
+		}
+
+		/*DIAPO CAROUSEL*/
+		.carousel.caccueil{ /*C'est l'ensemble du diapo*/
+			margin-top:30px; 
+			width:100%;
+			height: 150%;
+		}
+		.carousel-item.caccueil{/*C'est la taille du carousel très important quand les images sont de différentes tailles*/
+			height: 600px;/*ici j'ai fixé la hauteur du carousel , ça évite que la page bouge ,et le reste de l'image est coupé*/
+		}
+		.carousel-indicators{
+			z-index:1;
+		}
+		.imgsummarycar{ /*C'est le titre des diapos*/
+			color: black;
+			z-index: 1000;
+		    bottom:20%; 
+			left:0; 
+			position: absolute;
+			text-align: center;
+		}
+
+		/*div.accmode{
+			background-image: url("../IMG/jilsanderr2021.jpg");
+			background-size: cover;
+			max-width: 100%;
+  			height: auto;
+		}
+		div.accobjet{
+			background-image: url("../IMG/hub-01.jpg");
+			background-size: cover;
+		}*/
+		
+
+		/*FOOTER------------------------*/
+		.footersection{
+			background-color:#e2ba83;
+			font-family: "Jost",sans-serif;
+			padding-top: 20px;
+			margin-top: 20px;
+		}
+		.footersection ul>li:hover{
+			opacity: 0.5;
+		}
+
+		/*PAGE A PROPOS----------------------------------------------------------------------*/
+		.portraitpropos{
+			padding: 20px;
+			margin: 20px;
+			border-style: solid;
+			border-width: 0.5em;
+			border-color:#e2ba83;
+		}
+		.hautdepropos{
+			padding: 20px;
+			margin: 20px;
+		}
+
+		/*PAGE LE VETEMENT----------------------------------------------------------------------*/
+		.creasection{
+			margin-top: 20px;
+		}
+		.creasection img{
+			height: 100%;
+		}
+
+		.carousel-item.cvetement{/*C'est la taille du carousel très important quand les images sont de différentes tailles*/
+			/*ici j'ai fixé la hauteur du carousel , ça évite que la page bouge ,et le reste de l'image est coupé*/
+		}
+		.carousel.cvetement{ /*C'est l'ensemble du diapo*/
+			margin-top:30px; 
+			width:100%;
+		}
+		.imgsummaryvet{ /*C'est le titre des diapos*/
+			color: black;
+			z-index: 1000;
+		    bottom:20%; 
+			left:0; 
+			position: absolute;
+			text-align: center;
+		}
+		ul.listcreateur li{
+			position: relative;
+			display: inline-block;
+		}
+		.imgsummaryvetcrea{ /*C'est le titre des cases des createurs*/
+			color: #e2ba83;
+			z-index: 1000;
+		    bottom: 20%; 
+		    font-size: 150%;
+		    text-align: center;
+			margin: 0 auto;
+			position: absolute;
+		}
+		h3.imgsummaryvetcrea{
+		}
+		/*PAGE DE CONTACT*/
+		.contactcontact{
+			padding-top: 5%;
+			padding-bottom: 5%;
+		}
+		.contactcontact ul{
+			list-style: none;
+			list-style-type: none;
+		}
+
+		.buttoncomment{
+			background-color: #e2ba83;
+			border-style: none;
+		}
+		.buttoncomment:hover{
+			border: solid;
+			border-color: black;
+
+		}
+		.lesimputs{
+			border-style: none;
+			background-color:  #e2ba83;
+		}
+		.lesimputs:hover{
+			border: solid;
+			border-color: black;
+		}
+
+		.contactreseaux{
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: #e2ba83;
+		}
+
+		/*PAGE OBJET*/
+
+		.materiauxmoment{
+			margin-top: 2%;
+			margin-bottom: 5%;
+		}
+		.materiauxmoment img{
+			height: 100px;
+		}
+		.materiauxtitle{
+			color: #e2ba83;
+			margin: auto;
+		}
+		.portraitdesign{
+			margin:auto;
+		}
+@media screen and (max-width : 700px){
+	body{
+		color: black;
+		/*font-family: "Abril_Fatface","Jost", "minimal", Arial, sans-serif;*/
+	}
+	/*NAV*/
+	.navbar{
+		background-color: none;	
+		height: 20%;
+		width: auto;
+	}
+		.navbar-nav{
+			flex-direction: row;}
+			.nav-item{
+				font-size: 10px;
+				display: inline;
+			}
+			.nav-link{
+				color: white;
+			}
+			.nav-link:hover{
+				background-color: #e2ba83;
+				color: black;
+			}
+			.activeted{
+				color: #e2ba83;
+			}
+			
+			.lesimputs{
+				color: black; 
+				border-color: black;
+				margin-bottom: 5px;
+			}
+			.form-inline .form-control{
+				display: none;
+			}
+	
+			.imgacc{
+				position: relative;
+			}
+			.imgsummary{
+				color: white;
+				z-index: 1000;
+				bottom:0; 
+				left:0; 
+				position: absolute;
+			}
+			h1,h2,h3{
+				font-family:"Abril_Fatface", sans-serif;
+				font-size: 70%;
+			}
+	/*BOUTON DE RECHERCHE*/
+	.buttonsearch{
+		background-color: #e2ba83;
+		border-color: #e2ba83;
+	}
+	/*IMAGE DE SECTION PAGE D'ACCUEIL*/
+			div.img-fluid{
+				position: relative;
+				  overflow: hidden;
+			}
+			.img-fluid{
+				width: 100%;
+				padding: 0;
+			}
+			.list-inline-item{
+				display: inline;
+			}
+			img.imgintro{
+				width: 20%;
+			}
+			.imgmode1{
+				width: 40%;
+				display: inline;
+			}
+			.imgobjet1{
+				width: 40%;
+				display: inline;
+			}
+			.accueilrow{
+				padding-top: 20px;
+			}
+			div.imgaccsum{
+				color: black;
+				z-index: 1000;
+				bottom: 25%; 
+				left: 10%; 
+				position: absolute;
+			}
+			.d-flex{
+				display: inline;
+			}
+			/*DIAPO CAROUSEL*/
+			.carousel.caccueil{ /*C'est l'ensemble du diapo*/
+				margin-top:30px; 
+				width:50%;
+				height: 50%;
+			}
+			.carousel-item.caccueil{/*C'est la taille du carousel très important quand les images sont de différentes tailles*/
+				height: 300px;/*ici j'ai fixé la hauteur du carousel , ça évite que la page bouge ,et le reste de l'image est coupé*/
+			}
+			.carousel-indicators{
+				z-index:1;
+			}
+			.imgsummarycar{ /*C'est le titre des diapos*/
+				color: black;
+				z-index: 1000;
+				bottom:5%; 
+				left:0; 
+				position: absolute;
+				text-align: center;
+			}
+			/*FOOTER------------------------*/
+			.footersection{
+				background-color:#e2ba83;
+				font-family: "Jost",sans-serif;
+				padding-top: 20px;
+				margin-top: 20px;
+			}
+			.footersection ul>li:hover{
+				opacity: 0.5;
+			}
+	
+			/*PAGE A PROPOS----------------------------------------------------------------------*/
+			.portraitpropos{
+				padding: 20px;
+				margin: 20px;
+				border-style: solid;
+				border-width: 0.5em;
+				border-color:#e2ba83;
+			}
+			.hautdepropos{
+				padding: 20px;
+				margin: 20px;
+			}
+	
+			/*PAGE LE VETEMENT----------------------------------------------------------------------*/
+			.creasection{
+				margin-top: 20px;
+			}
+			.creasection img{
+				height: 100%;
+			}
+	
+			.carousel-item.cvetement{/*C'est la taille du carousel très important quand les images sont de différentes tailles*/
+				/*ici j'ai fixé la hauteur du carousel , ça évite que la page bouge ,et le reste de l'image est coupé*/
+			}
+			.carousel.cvetement{ /*C'est l'ensemble du diapo*/
+				margin-top:30px; 
+				width:100%;
+			}
+			.imgsummaryvet{ /*C'est le titre des diapos*/
+				color: black;
+				z-index: 1000;
+				bottom:20%; 
+				left:0; 
+				position: absolute;
+				text-align: center;
+			}
+			ul.listcreateur li{
+				position: relative;
+				display: inline-block;
+			}
+			.imgsummaryvetcrea{ /*C'est le titre des cases des createurs*/
+				color: #e2ba83;
+				z-index: 1000;
+				bottom: 20%; 
+				font-size: 50%;
+				text-align: center;
+				margin: 0 auto;
+				position: absolute;
+			}
+			h3.imgsummaryvetcrea{
+			}
+			/*PAGE DE CONTACT*/
+			.contactcontact{
+				padding-top: 5%;
+				padding-bottom: 5%;
+			}
+			.contactcontact ul{
+				list-style: none;
+				list-style-type: none;
+			}
+	
+			.buttoncomment{
+				background-color: #e2ba83;
+				border-style: none;
+			}
+			.buttoncomment:hover{
+				border: solid;
+				border-color: black;
+	
+			}
+			.lesimputs{
+				border-style: none;
+				background-color:  #e2ba83;
+			}
+			.lesimputs:hover{
+				border: solid;
+				border-color: black;
+			}
+	
+			.contactreseaux{
+				margin-top: 5%;
+				margin-bottom: 5%;
+				background-color: #e2ba83;
+			}
+	
+			/*PAGE OBJET*/
+	
+			.materiauxmoment{
+				margin-top: 2%;
+				margin-bottom: 5%;
+			}
+			.materiauxmoment img{
+				height: 100px;
+			}
+			.materiauxtitle{
+				color: #e2ba83;
+				margin: auto;
+			}
+			.portraitdesign{
+				margin:auto;
+			}
+	
+}

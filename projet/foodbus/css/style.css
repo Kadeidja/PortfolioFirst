@@ -1,0 +1,164 @@
+		@font-face {
+			font-family: 'Jost';
+			src: url('../Jost/static/Jost-Medium.ttf'),
+			url('../Jost-Medium.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Lora';
+			src: url('../Lora/static/Lora-Medium.ttf'),
+			url('../Lora/static/Lora-Medium.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		body{
+			background-color: #f2d156;
+			font-family: "Jost","Lora", Helvetica, Arial, sans-serif;
+		}
+		h3{ font-family: "Jost","Lora" Helvetica, Arial;
+		text-decoration: bold,   }
+		h5 {font-family:"Lora", Helvetica, Arial;}
+
+		.commentaire p{
+			font-family: 'Lora'; 
+			font-style: italic;
+		}
+		.ligne{
+			border: solid;
+			height: auto;
+			color: black;
+		}
+		
+		/*Menu*/
+		.navbar{
+			background-color: rgba(0, 0, 0, 0.2);	
+		}
+		.img-responsive{
+			width:100%;
+		}
+		.nav-link{
+			color: white;
+		}
+		.nav-link:hover{
+			background-color: #f2d156;
+			color: black;
+		}
+		.activeted{
+			color: #f2d156;
+		}
+		
+		.lesimputs{
+			color: black; 
+			border-color: black;
+			margin-bottom: 10px;
+		}
+
+		.imgacc{
+			position: relative;
+		}
+		.imgintroresum{
+			color: white;
+			z-index: 1000;
+		    bottom:0; 
+			left:0; 
+			position: absolute;
+		}
+
+		/*Footer*/
+		footer{
+			background-color: #433d31; 
+			color: white;
+			margin-top: 20px;
+			padding-top: 15px;
+		}
+		.footerlogo{
+			width: 30%;
+		}
+
+
+
+		/*Page d'accueil*/
+		div.img-fluid{
+			/*embed-responsive*/
+			position: relative;
+  			display: block;
+  			width: 100%;
+  			padding: 0;
+  			overflow: hidden;
+		}
+
+		img.imgintro{
+			width: 100%;
+		}
+		.buttonindex{
+		border-style: solid; 
+		border-color: black; 
+		background-color: #f2d156;
+		}
+		.buttonsubmit{
+			border-style: solid;
+		 	border-color: #433d31; 
+		 	background-color: #433d31;
+			color: #f2d156;
+		}
+		.buttonindex:hover{
+			background-color: #433d31;
+			color: #f2d156;
+		}
+		.sectionindex {
+			padding-top: 20px;
+		}
+
+		h1 h2 h3{
+			font-size: 2.0vw;
+		}
+
+
+		/*Page Présentation*/
+		.carousel{
+			height:25%;
+			width:25%;
+		}
+		.carousel-indicators{
+			z-index:1;
+		}
+
+		/*Page Nos Bus*/
+		.motnosbus{
+			font-style: italic;
+		}
+		/*Page Menus*/
+		.menutitle{
+			writing-mode: vertical-rl; 
+			text-orientation: sideways-rl;
+		}
+		/*Page Contact*/
+		.contactustitle{
+			font-style: italic;
+			color: black; 
+			text-align: center;
+			padding-top: 15px;
+		}
+		.contactadress {
+			text-align: center;
+			padding-top: 15px;
+		}
+		.scbackground{
+			background-color: #433d31; 
+			border-radius: 3% 0 3% 0;
+			text-align: center;
+		}
+		.sctitle{
+			font-style: italic; 
+			color: white; 
+			text-align: center;
+		}
+
+		.scbackground ul{
+			text-align: center;
+		}
+		.contactformtitle{
+			text-align: center;
+			padding-bottom: 15px;
+		}
