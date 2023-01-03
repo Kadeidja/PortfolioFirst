@@ -2,7 +2,7 @@
 	$basehost= 'mysql-kadeidja.alwaysdata.net';
 	$basename= 'kadeidja_port1';
 	$dbuser= 'kadeidja';
-	$dbpswd= '@35#bas123';
+	$dbpswd= '';
 
 
 	  try 
